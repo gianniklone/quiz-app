@@ -1,0 +1,36 @@
+@import "tailwindcss";
+/* CSS per il body */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0faf0;
+  color: #2d4a2d; 
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Sfondo animato */
+@keyframes greenGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.bg-animated-green {
+  background: linear-gradient(
+    270deg,
+    #d9f7e9,
+    #a7e3c2,
+    #8dd6a6,
+    #b5e7c0,
+    #d9f7e9
+  );
+  background-size: 600% 600%;
+  animation: greenGradient 20s ease infinite;
+}
