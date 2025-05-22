@@ -1,54 +1,27 @@
-# React + TypeScript + Vite
+# Quiz App - React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Questo progetto è una semplice applicazione quiz realizzata con **React**, **TypeScript** e **Vite**.  
+Il quiz è incentrato su domande a tema sostenibilità ambientale e alimentazione, con funzionalità di visualizzazione spiegazioni e punteggio finale.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Caratteristiche principali
 
-## Expanding the ESLint configuration
+- **Interfaccia moderna e reattiva** realizzata con React e TypeScript.
+- **Domande con risposte a scelta multipla**, una sola risposta corretta per domanda.
+- **Visualizzazione immediata della spiegazione** della risposta corretta dopo che l’utente ha selezionato un’opzione.
+- **Barra di progresso** che indica il numero di domande completate e quelle rimanenti.
+- **Calcolo e visualizzazione del punteggio finale** al termine del quiz.
+- **Pulsante per resettare il quiz** e ricominciare da capo.
+- Uso di **componenti funzionali** e **hooks React** per gestione dello stato e degli eventi.
+- Styling con CSS moderno (puoi aggiungere Tailwind CSS o altro se vuoi).
+- Build e sviluppo con Vite per velocità e semplicità.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Come usare il progetto
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+1. Clona il repository:
+   ```bash
+   git clone https://github.com/tuo-username/nome-repo.git
+   cd nome-repo
